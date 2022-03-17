@@ -26,7 +26,7 @@ public class Iterator {
 	} // for 
 	
 	System.out.println(list1.iterator().toString()); // 주소만 나옴 현
-	
+	System.out.println(list1.iterator().hasNext());
 	
 	} //main
 } // class
