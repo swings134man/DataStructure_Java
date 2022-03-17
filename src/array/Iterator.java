@@ -7,7 +7,7 @@ public class Iterator {
 
 	public static void main(String[] args) {
 
-	// iterator : 이터레이터 연습 
+	// iterator : 이터레이터
 		
 		
 	ArrayList list1 = new ArrayList();
@@ -26,7 +26,6 @@ public class Iterator {
 	} // for 
 	
 	System.out.println(list1.iterator().toString()); // 주소만 나옴 현
-	System.out.println(list1.iterator().hasNext());
 	
 	} //main
 } // class
