@@ -28,23 +28,28 @@ public class RandomSort {
 		
 		System.out.println("정렬 전 : " + Arrays.toString(list)); // 난수 발생확인
 		
-		// --------------------------------------------------
-		// 선택 정렬 (Insert Sort)
-		int prim = 0; //기준값 => 비교대상 
-		int j = 0;
+		// -------------------- 정렬 ------------------------------
 		
-		for (int i = 1; i < list.length; i++) {
-			prim = list[i];
-			
-			for (j = i -1; j >= 0 && list[j] > prim; j--) {
-				list[j + 1] = list[j];
-				
-			}
-			list[j+1] = prim;
-			
-		} //for
-		
+		sort(list);
 		System.out.println("정렬 후 : " + Arrays.toString(list)); // 난수 발생확인
 		
 	}//main
+	
+	// 선택 정렬 (Insert Sort)
+	static void sort(int[] list) {
+				int prim = 0; //기준값 => 비교대상 
+				int j = 0;
+				
+				for (int i = 1; i < list.length; i++) {
+					prim = list[i];
+					
+					for (j = i -1; j >= 0 && list[j] > prim; j--) {
+						list[j + 1] = list[j];
+						
+					}
+					list[j+1] = prim;
+					
+				} //for
+	}//sort
+	
 }//class
