@@ -24,14 +24,17 @@ public class Map {
 		HashMap<String, String> map1 = new HashMap<String, String>(); //map1
 		map1.put("id", "swings134");
 		map1.put("pw", "1234");
-		map1.put("addr", "paju");
+		map1.put("addr", "paju");		// Key 값은 중복불가! 
 		
 		System.out.println(map1);
 		System.out.println(map1.size()); // map 의 사이즈 
 		System.out.println(map1.get("id"));			// 해당 Key의 Value 출력
+		
 		System.out.println(map1.containsKey("i"));  // Key 값중에 존재여부 검색 true/false 출력
+		System.out.println(map1.containsValue("1234")); // value 의 존재여부 검색
 		
 		map1.remove("addr"); 	// 해당 key / value 삭제
+		map1.replace("pw", "4321");	// 해당 key 값 변경 
 		
 		System.out.println(map1);
 		
@@ -64,7 +67,7 @@ public class Map {
 		System.out.println(LinkMap);
 		System.out.println("------------------ LinkedHashMap ---------------------");
 		
-		// TreeMap : 입력된 key의 오름차순 순서로 데이터를 저장.
+		// TreeMap : 입력된 key의 오름차순 순서로 데이터를 저장. 정렬 때문에 데이터 삽입, 삭제 시간 오래걸림.
 		TreeMap<String, String> treeMap = new TreeMap<String, String>();
 		
 		treeMap.put("apple", "1");
