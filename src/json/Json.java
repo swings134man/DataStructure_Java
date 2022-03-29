@@ -17,15 +17,16 @@ public class Json {
 	public static void main(String[] args) throws ParseException, IOException {
 		
 		JSONObject obj = new JSONObject();		// 전송할 JSON object 
-		JSONObject json1 = new JSONObject();	// JSON 타입 추가할 object 
 		JSONArray arr = new JSONArray();		// JSON 타입 List 
 		
 		
 		for (int i = 0; i < 3; i++) {
+			JSONObject json1 = new JSONObject();	// JSON 타입 추가할 object 
 			
 			json1.put("first", "Kang_" + i);
 			json1.put("last", "sj_" + i);
 			
+			System.out.println(i);
 			arr.add(json1);
 		}
 		
