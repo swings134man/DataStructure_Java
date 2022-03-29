@@ -47,6 +47,9 @@ public class Json {
 		System.out.println();
 		//-----------------------------------JSON data put-----------------------------------------v
 		
+		// JSON 리스트 내 DATA추출 방법
+		// 오브젝트 : 어레이 (casting) -> 어레이 내부 키값 추출 -> for - 오브젝트(casting) + i - 오브젝트.get()  
+		// 어레이 : 오브젝트 -> Array -> for - array to Object -> Object (Key값)
 		
 		//FileReader file = new FileReader("json/exam.json");
 		JSONParser parser = new JSONParser();
@@ -55,6 +58,13 @@ public class Json {
 		JSONObject jso = (JSONObject)ob;
 		
 		System.out.println("result : " + jso.get("subject"));
+		
+		JSONArray jsoA = (JSONArray) jso.get("students");
+		for (int i = 0; i < jsoA.size(); i++) {
+			JSONObject jsoRes = (JSONObject) jsoA.get(i);
+			System.out.println(i + "번 first : " + jsoRes.get("id"));
+			System.out.println(i + "번 first : " + jsoRes.get("name"));
+		}
 		
 		
 		System.out.println();
