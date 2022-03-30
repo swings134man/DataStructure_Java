@@ -3,9 +3,10 @@ package json;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -30,9 +31,11 @@ public class Json2 {
 		
 		JSONObject json = (JSONObject) object; // object -> JSONObject
 		JSONArray array = (JSONArray) json.get("key");
-		LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+		LinkedHashMap<String, Object> map = new LinkedHashMap<String, Object>();
 		
 		LinkedList<String> list = new LinkedList<String>(); // TODO: DTO Type 넣어볼것.
+		
+		List<String> jsonList = new ArrayList<String>(); // map에 넣을 list 객체
 		
 		for (int i = 0; i < array.size(); i++) {
 			JSONObject parsing = (JSONObject) array.get(i);
@@ -40,8 +43,12 @@ public class Json2 {
 			map.put("location" ,(String) parsing.get("location"));
 			map.put("value" ,(String) parsing.get("value"));
 			
+//			jsonList.add((String) parsing.get("location"));
+			
 			list.add(i,(String) parsing.get("location"));
 			list.add(i,(String) parsing.get("value"));
+			
+			map.put("location" , list);
 
 		}// for
 
