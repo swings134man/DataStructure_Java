@@ -6,7 +6,7 @@ package search;
  * 순차 정렬이 되어있다는것이 전제.
  * 중앙값을 찾고 찾을려는 값과 비교해서 조건을 줄여나감.
  * </pre>
- * @Class   : 이진탐색 알고리즘 
+ * @Class   : 이진탐색 알고리즘 (반복문)
  * @File    : BinarySearch_1.java
  * @Package : search
  * @author  : seokjunkang
