@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * 
  * <pre>
+ * 선택정렬, 버블정렬 보다 빠름 >> 그럼에도 시간복잡도는 O(n^2)
  * </pre>
  * @Class   : InsertionSort(삽입정렬)
  * @File    : InsertionSort.java
