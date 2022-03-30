@@ -7,6 +7,9 @@ import java.util.Random;
  * 
  * <pre>
  * 랜덤으로 생성된 숫자의 배열을 정렬.
+ * 삽입 정렬 (Insertion sort) 사용.
+ * 삽입정렬은 효율이 좋지않음. 
+ * 
  * </pre>
  * @Class   : 
  * @File    : RandomSort.java
@@ -34,12 +37,12 @@ public class RandomSort {
 		
 	}//main
 	
-	// 선택 정렬 (Insert Sort)
+	// 삽입 정렬 (Insertion Sort)
 	static void sort(int[] list) {
 				//기준값 = 앞, 비교값 = 기준값 + 1
 		
 				int prim = 0; //기준값 => 비교대상 
-				int j = 0;
+				int j = 0;	// 반복제어용 변수
 				
 				for (int i = 1; i < list.length; i++) {
 					prim = list[i]; // 임시저장할대상 = 기준값 + 1  
