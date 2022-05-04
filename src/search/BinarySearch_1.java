@@ -30,7 +30,7 @@ public class BinarySearch_1 {
 			mid = (left + right)/2;	// 연산 결과에 따라 pivot 값이 변경되어야 하기에 while문안에 위치, 나머지 버림
 			
 			if(x == a[mid]) {	// 검색하고자 하는 값이 pivot값이랑 같으면 출력 후 break;
-				System.out.println("x의 index : " + mid + 1);
+				System.out.println("x의 index : " + (mid + 1));
 				break;
 				
 			}

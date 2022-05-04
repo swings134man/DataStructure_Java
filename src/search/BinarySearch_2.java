@@ -19,7 +19,12 @@ public class BinarySearch_2 {
 
 		int result = binarySearch(a, 0, a.length -1, x);
 		
-		System.out.println("x의 인덱스 : " + result);
+		if(result != -1) {
+			System.out.println("x의 인덱스 : " + result);
+			
+		}else if(result == -1) {
+			System.out.println("해당 결과값을 찾지 못했습니다.");
+		}
 		
 	}//main
 
