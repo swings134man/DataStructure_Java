@@ -52,6 +52,28 @@ public class Stream_2 {
 		// java 8 lambda
 		names.stream().map(name -> name.toUpperCase()).forEach(System.out::println);
 		
+		// Collectors. joining 
+		/*
+		 * 1. Collector 의 입력 요소를 단일 문자열로 연결한다.
+		 * 2. 요소 사이에 넣을 요소(delimiter), 문자열의 앞(prefix), 문자열의 뒤 (suffix)를 설정 가능
+		 * 	  -->> Collectors.joining(delimiter, prefix, suffix)
+		 *    -->>>> Collectors.joining(", ", "{", "}") 
+		 *    ->result : {RED, BLUE, BLACK, GREEN}
+		 */
+		List<String> joining1 = Arrays.asList("a","b","c","d","e"); 
+		
+		// 문자열로(String) 변환하고 요소 사이에 ", " 를 넣는다. 사이에 넣는것임으로 마지막은 출력x 
+		System.out.println("joining : " +
+			joining1.stream()
+					.map(String::valueOf)
+					.collect(Collectors.joining(", "))
+					
+		);
+		
+//		위의 code는 아래와 같이 사용했었음.
+//		for(string s : list) sb.append(s).append(", ");
+//		System.out.println(sb.subString(0,sb.length()-2).toString());
+		
 		// ------------------------------------------------
 		// filter 
 		/*
