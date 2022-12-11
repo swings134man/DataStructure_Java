@@ -3,7 +3,7 @@ package algorithm;
 public class 최대공약수_최소공배수 {
 
 	
-	// 최대 공약수 - for 
+	// 최대 공약수 - for (Greatest Common Divisor)
 	private static int gcdFor(int a, int b) {
 		int answer = 0; // 최대공약수 
 		int min = 0; // 두 수 중에서 값이 더 작은것.
@@ -33,13 +33,16 @@ public class 최대공약수_최소공배수 {
 		}
 		
 		// 재귀 호출을 통하여 해결.
-		return gcdRec(a, a % b);
+		return gcdRec(b, a % b);
 	}
 	
-	// 최소 공배수
+	
+	// 최소 공배수 - Least Common Multiple
 	private static int min(int a, int b, int max) {
 		return (a * b) / max;
 	}
+	
+	
 	
 	public static void main(String[] args) {
 		int a = 48;
