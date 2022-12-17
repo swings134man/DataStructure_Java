@@ -13,7 +13,7 @@ import java.util.Queue;
  * @author  : seokjunkang
  * @Date    : 2022. 7. 19. 오후 6:35:43
  * 
- * 1. Queue에 이웃하는 정점을 담아 차례대로 pop() gkdu rngus
+ * 1. Queue에 이웃하는 정점을 담아 차례대로 pop() 하여 구현
  * 2. node 방문시 반드시 방문여부 검사
  * 3. 재귀 방식인 DFS에 비해 정점을 저장할 저장공간 많이 필요
  * 4. 탐색해야 할 node가 많다면 좋지 않음. 
