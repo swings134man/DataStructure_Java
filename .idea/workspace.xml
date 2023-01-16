@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ed337212-a10e-4cd8-8e7c-9723831d10c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stack_queue/Stack_Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stack_queue/Stack_Basic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     <property name="project.structure.side.proportion" value="0.2735632" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
-  <component name="RunManager" selected="Application.Queue_basic">
+  <component name="RunManager" selected="Application.Stack_Basic">
     <configuration name="DfsRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dfsBfs.DfsRecursion" />
       <module name="data structure" />
@@ -110,8 +111,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Queue_basic" />
         <item itemvalue="Application.Stack_Basic" />
+        <item itemvalue="Application.Queue_basic" />
         <item itemvalue="Application.StackQueue" />
         <item itemvalue="Application.DfsRecursion" />
         <item itemvalue="Application.TestCode2" />
@@ -134,7 +135,8 @@
       <workItem from="1671360356186" duration="145000" />
       <workItem from="1671702441882" duration="1664000" />
       <workItem from="1673606830852" duration="2156000" />
-      <workItem from="1673791369764" duration="4822000" />
+      <workItem from="1673791369764" duration="5916000" />
+      <workItem from="1673862824732" duration="2766000" />
     </task>
     <servers />
   </component>

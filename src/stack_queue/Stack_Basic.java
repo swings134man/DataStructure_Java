@@ -32,6 +32,15 @@ public class Stack_Basic {
         // stack 내부의 요소 찾는것 아래로 내려갈수록 리턴값은 커짐. (stack은 선입후출 방식이기 떄문)
         System.out.println(stack.search(1));
 
+        System.out.println("em : "+ stack.empty());
+
+        System.out.println("stack status : " + stack);
+
+        System.out.println(stack.search(2));
+
+
+
+
     }
 
 }
