@@ -2,9 +2,6 @@
 
 TestCode.java
 
-.idea/workspace.xml
-
-.idea/data structure.iml
-.idea/modules.xml
-
-.idea/compiler.xml
+.idea
+bin
+.settings
