@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.math;
 
 /**
  * LCM(Lowest Common Multiple): 최소공배수 의 인수가 2개 이상인것 구할때 사용하는 방법

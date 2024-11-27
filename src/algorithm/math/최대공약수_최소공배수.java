@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.math;
 
 public class 최대공약수_최소공배수 {
 
