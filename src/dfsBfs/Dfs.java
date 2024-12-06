@@ -7,7 +7,7 @@ import java.util.Stack;
  * 
  * <pre>
  * </pre>
- * @Class   : DFS Stack 예제. 
+ * @Class   : DFS Stack, Recursion
  * @File    : Dfs.java
  * @Package : dfsBfs
  * @author  : seokjunkang
@@ -26,35 +26,43 @@ public class Dfs {
 	static Stack<Integer> stack = new Stack<>();
 	
 	public static void main(String[] args) {
+		dfs_stack(1);
 
-		//시작 노드 stack 삽입
-		stack.push(1);
-		
-		// 시작 노드 방문 처리
-		visited[1] = true;
-		
-		// stack이 비어있지 않으면 계속 반복
-		while (!stack.isEmpty()) {
-			
-			// stack 에서 하나 꺼냄
-			int nodeIndex = stack.pop();
-			
-			// 방문 노드 출력
-			System.out.print(nodeIndex + " -> " );
-			
-			// 꺼낸 노드와 인접 노드 찾기
-			for(int LinkedNode : graph[nodeIndex]) {
-				
-				// 인접 노드를 방문하지 않았을 경우 stack에 넣고 방문처리 함.
-				if(!visited[LinkedNode]) {
-					stack.push(LinkedNode);
-					visited[LinkedNode] = true;
-				}
-				
-			}
-		}
-		
-		
+		visited = new boolean[9];
+		System.out.println();
+		dfs_recursion(1);
 	} //main
 
+	// dfs stack
+	static void dfs_stack(int start) {
+		stack.push(start);
+
+		while (!stack.isEmpty()) {
+			int node = stack.pop();
+
+			if(visited[node]) continue;
+
+			visited[node] = true;
+			System.out.print(node + " -> ");
+
+			for (int i = graph[node].length - 1; i >= 0 ; i--) {
+				int reverseNode = graph[node][i];
+				if(!visited[reverseNode]){
+					stack.push(reverseNode);
+				}
+			}
+		}
+	}
+
+	// dfs recursion
+	static void dfs_recursion(int start) {
+		visited[start] = true;
+		System.out.print(start + " -> ");
+
+		for (int x: graph[start]) {
+			if(!visited[x]) {
+				dfs_recursion(x);
+			}
+		}
+	}
 }
