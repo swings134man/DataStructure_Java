@@ -4,5 +4,7 @@ TestCode.java
 
 .idea
 bin
+out/
 .settings
 classes
+*.iml
